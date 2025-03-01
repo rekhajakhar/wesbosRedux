@@ -20,11 +20,11 @@ export function addComments(postId, author, comment){
 
 
 // remove comments
-export function deleteComment(postId, i) {
+export function removeComment(postId, i) {
     return {
-        type: 'DELETE_COMMENT',
+        type: 'REMOVE_COMMENT',
+        i,
         postId,
-        i
     }
 }
 
